@@ -12,6 +12,7 @@ public class MyMetaObjectHandler implements com.baomidou.mybatisplus.core.handle
         this.setFieldValByName("createTime",new Date(),metaObject);
         this.setFieldValByName("updateTime",new Date(),metaObject);
         this.setFieldValByName("version",1,metaObject);
+        this.setFieldValByName("deleted",0,metaObject);
     }
 
     @Override

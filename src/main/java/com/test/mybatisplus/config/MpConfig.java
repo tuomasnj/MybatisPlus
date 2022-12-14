@@ -1,5 +1,6 @@
 package com.test.mybatisplus.config;
 
+import com.baomidou.mybatisplus.extension.injector.LogicSqlInjector;
 import com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.springframework.context.annotation.Bean;
@@ -17,5 +18,11 @@ public class MpConfig {
     @Bean
     public PaginationInterceptor paginationInterceptor(){
         return new PaginationInterceptor();
+    }
+
+    //逻辑删除插件
+    @Bean
+    public LogicSqlInjector logicSqlInjector(){
+        return new LogicSqlInjector();
     }
 }
