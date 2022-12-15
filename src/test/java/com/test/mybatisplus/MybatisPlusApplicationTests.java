@@ -45,7 +45,7 @@ class MybatisPlusApplicationTests {
     //修改行数据
     public void updateUser() {
         User user = new User();
-        user.setId(1602580085799915521L);
+        user.setId(1L);
         user.setAge(54);
         int ans = userMapper.updateById(user);
         System.out.println(ans);
